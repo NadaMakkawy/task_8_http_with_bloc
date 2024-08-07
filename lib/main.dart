@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
     return RepositoryProvider.value(
       value: postRepository,
       child: MaterialApp(
-        title: 'Flutter Cubit Demo',
+        debugShowCheckedModeBanner: false,
+        title: 'Posts with Cubit',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),

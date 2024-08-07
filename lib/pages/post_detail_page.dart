@@ -53,9 +53,17 @@ class PostDetailPage extends StatelessWidget {
                       physics: const NeverScrollableScrollPhysics(),
                       itemCount: state.comments.length,
                       itemBuilder: (context, index) {
-                        return ListTile(
-                          title: Text(state.comments[index].name),
-                          subtitle: Text(state.comments[index].body),
+                        return Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Card(
+                            elevation: 2,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8)),
+                            child: ListTile(
+                              title: Text(state.comments[index].name),
+                              subtitle: Text(state.comments[index].body),
+                            ),
+                          ),
                         );
                       },
                     ),
