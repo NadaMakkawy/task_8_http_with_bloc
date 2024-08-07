@@ -50,7 +50,7 @@ class _PostItemState extends State<PostItem> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                        '${widget.post.userId}@gmail.com • ${DateTime.now().toLocal().toString().split(' ')[0]}',
+                        '${widget.post.id}@gmail.com • ${DateTime.now().toLocal().toString().split(' ')[0]}',
                         style: const TextStyle(color: Colors.grey)),
                     Row(
                       children: [
