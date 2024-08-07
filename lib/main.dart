@@ -1,3 +1,6 @@
+/// LINK TO ANOTHER APPROACH WITHOUT STATE MANAGEMENT PACKAGES
+/// https://github.com/NadaMakkawy/task_8_http_without_bloc.git
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
